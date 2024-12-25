@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 
-file_path = os.getenv("DATA_FILE", "gym_recommendation.xlsx")
+file_path = os.getenv("DATA_FILE", "D:\Projects\workout_recommendation_system\gym_recommendation.xlsx")
 
 if not os.path.exists(file_path):
     raise FileNotFoundError(f"The file {file_path} does not exist. Please place it in the correct directory.")
