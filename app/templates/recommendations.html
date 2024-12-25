@@ -9,8 +9,9 @@
 <body class="p-4">
     <div class="container mx-auto max-w-6xl">
         <h1 class="text-4xl font-bold mb-12 neon-title">Your Personalized Workout Plan</h1>
+        <div class="flexbox">
         
-        <div class="recommendations-container">
+            <div class="recommendations-container">
             {% for recommendation in recommendations %}
             <div class="glass-card">
                 <h2 class="text-2xl recommendation-number mb-6 text-center">Recommendation {{loop.index}}</h2>
@@ -32,7 +33,7 @@
             </div>
             {% endfor %}
         </div>
-        
+    </div>
         <div class="mt-12 text-center">
             <a href="/" class="back-btn">Try Another Recommendation</a>
         </div>

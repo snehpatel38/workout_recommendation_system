@@ -23,10 +23,10 @@ body {
 .neon-title {
     text-align: center;
     color: #fff;
-    text-shadow: 0 0 10px #4f46e5,
-                 0 0 20px #4f46e5,
-                 0 0 40px #4f46e5,
-                 0 0 80px #4f46e5;
+    text-shadow: 0 0 10px #6562a5,
+                 0 0 20px #6562a5,
+                 0 0 40px #6562a5,
+                 0 0 80px #6562a5;
     animation: neon 1.5s ease-in-out infinite alternate;
 }
 
@@ -120,9 +120,13 @@ body {
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 600px;
+transition: all 0.3s ease;
+width: 100%;
+max-width: 600px;
+
+transition: all 0.3s ease;
+width: 100%;
+max-width: 600px;
 }
 
 .glass-card:hover {
@@ -132,11 +136,17 @@ body {
 
 .recommendations-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping if there are more cards */
+    justify-content: center; /* Center the cards horizontally */
     gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .recommendation-number {
@@ -151,6 +161,16 @@ body {
     color: #4f46e5;
     font-weight: 600;
     margin-bottom: 0.5rem;
+}
+
+.glass-card {
+    flex: 1 1 calc(50% - 2rem); /* Take up half the container width minus the gap */
+    max-width: 400px; /* Optional: Set a max width for each card */
+    box-sizing: border-box;
+}
+
+.neon-title {
+    margin-top: 2rem; /* Adjust the value as needed */
 }
 
 .back-btn {
