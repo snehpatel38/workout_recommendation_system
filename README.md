@@ -1,7 +1,13 @@
-# Workout Recommendation System
-
-![Project Logo](https://via.placeholder.com/600x200.png?text=Workout+Recommendation+System)  
+# Workout Recommendation System 
 **A personalized fitness journey starts here.**
+
+## 🖼️ Screenshots
+
+### Home Page
+![Home Page](app/images/home.png)
+
+### Recommendation Page
+![Recommendation Page](app/images/recommend.png)
 
 ---
 
@@ -37,16 +43,6 @@ The **Workout Recommendation System** is a smart solution designed to help users
 1. **User Input**: Users provide their basic information (e.g., age, weight, and fitness goals).
 2. **Recommendation Engine**: Using a machine learning model, the system analyzes user data to suggest personalized workout plans.
 3. **Output**: Recommended workouts are displayed with detailed instructions and visual aids.
-
----
-
-## 🖼️ Screenshots
-
-### Home Page
-![Home Page](D:\Projects\workout_recommendation_system\app\images\home.png)
-
-### Recommendation Page
-![Recommendation Page](D:\Projects\workout_recommendation_system\app\images\recommend.png)
 
 ---
 
