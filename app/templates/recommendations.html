@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workout Recommendation System</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+<body class="p-4">
+    <div class="container mx-auto max-w-6xl">
+        <h1 class="text-4xl font-bold mb-12 neon-title">Your Personalized Workout Plan</h1>
+        
+        <div class="recommendations-container">
+            {% for recommendation in recommendations %}
+            <div class="glass-card">
+                <h2 class="text-2xl recommendation-number mb-6 text-center">Recommendation {{loop.index}}</h2>
+                
+                <div class="content-section">
+                    <h3 class="section-title">Exercises</h3>
+                    <p class="text-gray-300">{{recommendation['Exercises']}}</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-title">Equipment</h3>
+                    <p class="text-gray-300">{{recommendation['Equipment']}}</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-title">Diet</h3>
+                    <p class="text-gray-300">{{recommendation['Diet']}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="mt-12 text-center">
+            <a href="/" class="back-btn">Try Another Recommendation</a>
+        </div>
+    </div>
+</body>
+</html>

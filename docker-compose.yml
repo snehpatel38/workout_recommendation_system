@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app 
+      - ./gym recommendation.xlsx:/app/gym recommendation.xlsx
+    environment:
+      FLASK_ENV: development
+      FLASK_APP: app.app
+      environment:
+      DATA_FILE: /app/gym_recommendation.xlsx
