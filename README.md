@@ -48,9 +48,9 @@ The **Workout Recommendation System** is a smart solution designed to help users
 ## 🧰 Installation and Setup
 
 ### Prerequisites
-- Python 3.8+
-- Streamlit
-- Docker (optional)
+```bash
+   pip install -r requirements.txt
+```
 
 ### Installation Steps
 
