@@ -105,4 +105,6 @@ The system uses a dataset containing information about various workouts, fitness
 
 ---
 
+## More Details : https://snehpatel38.github.io/workout_recommendation_system/
+
 ### 🌟 Don't forget to ⭐ this repository if you find it useful!
