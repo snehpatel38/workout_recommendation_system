@@ -27,8 +27,7 @@ The **Workout Recommendation System** is a smart solution designed to help users
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Streamlit
-- **Backend**: Python (with Pandas, NumPy, and Scikit-learn)
+- **Web App**: Flask, HTML, CSS
 - **Database**: CSV user data
 - **Libraries**:
   - Scikit-learn: Recommendation model
