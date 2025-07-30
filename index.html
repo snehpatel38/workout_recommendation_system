@@ -4,67 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Workout Recommendation System</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3, h4, h5 {
+      color: #222;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .github-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .github-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-<body class="bg-light">
+<body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">💪 Workout Recommendation System</span>
+  <!-- Navbar -->
+  <div class="navbar">
+    💪 Workout Recommendation System
   </div>
-</nav>
 
-<!-- Main Container -->
-<div class="container py-5">
-  <div class="card shadow-lg border-0 rounded-4 p-4 bg-white">
-    
-    <!-- Title -->
-    <h2 class="text-center mb-3">Personalized Fitness Workout Recommender</h2>
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Personalized Fitness Workout Recommender</h2>
+    <p>This system provides personalized workout suggestions based on user input like age, fitness goals, and preferences.</p>
 
-    <!-- Introduction -->
-    <p>This system provides personalized workout suggestions based on user input like age, fitness goals, and preferences. It uses similarity metrics and filters to return workouts best suited to the user’s needs.</p>
+    <div class="section">
+      <h4>📌 Features</h4>
+      <ul>
+        <li>Recommends workouts using cosine similarity</li>
+        <li>Filters by body part, equipment, and level</li>
+        <li>Built using Flask (not Streamlit)</li>
+        <li>Dockerized for easy deployment</li>
+      </ul>
+    </div>
 
-    <!-- Features -->
-    <h4 class="mt-4">📌 Features</h4>
-    <ul>
-      <li>Recommends workouts using cosine similarity</li>
-      <li>Filters by body part, equipment, and level</li>
-      <li>Built using Flask (Python web framework)</li>
-      <li>Dockerized for easy deployment and scalability</li>
-    </ul>
+    <div class="section">
+      <h4>🧠 Technologies Used</h4>
+      <ul>
+        <li>Python (Flask)</li>
+        <li>Scikit-learn, Pandas</li>
+        <li>Cosine Similarity</li>
+        <li>Docker</li>
+      </ul>
+    </div>
 
-    <!-- Tech Stack -->
-    <h4 class="mt-4">🧠 Technologies Used</h4>
-    <ul>
-      <li>Python</li>
-      <li>Flask for backend routing</li>
-      <li>Pandas and Scikit-learn</li>
-      <li>Cosine Similarity for recommendation logic</li>
-      <li>Docker & Docker Compose for containerization</li>
-    </ul>
+    <div class="section">
+      <h4>🔗 GitHub Repository</h4>
+      <a href="https://github.com/snehpatel38/workout_recommendation_system" target="_blank" class="github-btn">
+        View on GitHub
+      </a>
+    </div>
 
-    <!-- GitHub Link -->
-    <h4 class="mt-4">🔗 GitHub Repository</h4>
-    <a href="https://github.com/snehpatel38/workout_recommendation_system" target="_blank" class="btn btn-primary mb-4">
-      View Project on GitHub
-    </a>
+    <div class="section">
+      <h3>🖼️ Screenshots</h3>
 
-    <!-- Screenshots -->
-    <h3 class="mt-5 mb-4">🖼️ Screenshots</h3>
-
-    <div class="mb-4">
       <h5>🏠 Home Page</h5>
-      <img src="https://raw.githubusercontent.com/snehpatel38/workout_recommendation_system/master/app/images/home.png" alt="Home Page" class="img-fluid rounded shadow-sm border">
-    </div>
+      <img src="https://raw.githubusercontent.com/snehpatel38/workout_recommendation_system/master/app/images/home.png" alt="Home Page">
 
-    <div>
       <h5>📋 Recommendation Page</h5>
-      <img src="https://raw.githubusercontent.com/snehpatel38/workout_recommendation_system/master/app/images/recommend.png" alt="Recommendation Page" class="img-fluid rounded shadow-sm border">
+      <img src="https://raw.githubusercontent.com/snehpatel38/workout_recommendation_system/master/app/images/recommend.png" alt="Recommendation Page">
     </div>
-
   </div>
-</div>
 
 </body>
 </html>
